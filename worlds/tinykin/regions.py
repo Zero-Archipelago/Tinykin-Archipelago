@@ -10,9 +10,9 @@ def create_and_connect_regions(world: TinykinWorld) -> None:
     connect_regions(world)
 
 def create_all_regions(world: TinykinWorld) -> None:
-    Test_Region = Region("1", world.player, world.multiworld)
+    Chrysal_Workshop = Region("Chrysal Workshop", world.player, world.multiworld)
     regions = [
-        Test_Region,
+        Chrysal_Workshop,
     ]
     world.multiworld.regions += regions
 
