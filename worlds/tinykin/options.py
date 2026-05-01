@@ -5,10 +5,10 @@ from Options import Choice, OptionGroup, PerGameCommonOptions, Range, Toggle, De
 
 class Goal(Choice):
     """Choose the end goal.
-    Find Ardwen: Vanilla ending. Find Ardwen in the final room.
+    Find Ardwin: Vanilla ending. Find Ardwin in the final room.
     All Pollen: Collect all of the pollen for each area in the game."""
     display_name = "Goal"
-    option_find_ardwen = 0
+    option_find_ardwin = 0
     option_all_pollen = 1
     default = 0
 
@@ -28,6 +28,7 @@ class SoapboardLogic(Toggle):
 class AreaShuffle(Toggle):
     """Shuffles the order of the areas in the game."""
     display_name = "Area Shuffle"
+    visibility = Visibility.none
 
 class RaceTier(Choice):
     """The highest tier in the race challenges that will have a location check."""
